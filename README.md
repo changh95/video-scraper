@@ -16,7 +16,9 @@
 
 - I strongly recommend using this software ONLY to download videos for PERSONAL USAGE.
 - I am not responsible for any legal issues caused by copyright violations.
-  - For example, 1. sharing the videos without original author's contents, 2. downloading the videos from the websites where it's not allowed.
+  - For example...
+    - Sharing the videos without original author's contents
+    - Downloading the videos from the websites where it's not allowed.
 
 ## How to use
 
