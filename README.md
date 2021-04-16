@@ -2,7 +2,7 @@
 
 ## Features
 
-- Downloads multiple videos with just a single command.
+- **Video downloader with just a single command**.
   - [youtube-dl](https://github.com/ytdl-org/youtube-dl) is used to download videos
   - A .csv file is used to manage what videos to download.
 
