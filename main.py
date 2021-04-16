@@ -24,6 +24,9 @@ def dl_ffmpeg():
         os.system("pip install wget")
         url = "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-full.7z"
         wget.download(url)
+        print("")
+        print("Please unzip the file. Then move into the folder, until you find ffmpeg-4.4.full_build/bin/ffmpeg.exe")
+        print("Copy the ffmpeg.exe right next to youtube-dl.exe, then start the python script again without --ffmpeg flag.")
 
 
 def read_csv(lst):

@@ -16,6 +16,8 @@
   - The second column is the **streaming url**. Copy and paste from your browser. If the website is not supported by [youtube-dl](https://github.com/ytdl-org/youtube-dl), refer to the 'Tips' section below.
 - If you are using it for the first time, run `python3 ./main.py --youtube_dl --ffmpeg`.
   - This will download the necessary softwares.
+  - If you are Windows user, you'll need [7zip](https://www.7-zip.org/).
+    - Once you run the command above, you will see a file `ffmpeg-4.4-full_build`. Unzip this, and copy the 'ffmpeg-4.4-full_build/bin/ffmpeg.exe' to the main directory (right next to youtube-dl.exe).
 - For any uses after the first time, just use `python3 ./main.py`.
 
 ## Tips
