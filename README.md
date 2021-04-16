@@ -66,7 +66,7 @@
   - Get the streaming url by using [Video Downloadhelper](https://chrome.google.com/webstore/detail/video-downloadhelper/lmjnegcaeklhafolokijcfjliaokphfk?hl=ko).
   - Paste the streaming url onto the `video_list.csv`
 
-![](./image.png)
+![](./video_download_helper.gif)
 
 ## License / Legal issues
 
