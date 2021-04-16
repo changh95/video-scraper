@@ -5,8 +5,8 @@
 - [Features](#features)
 - [Example uses](#example-uses)
 - [How to use](#how-to-use)
-  - [Linux](#linux)
-  - [Windows](#windows)
+   - [Linux](#linux)
+   - [Windows](#windows)
 - [Downloading video from unsupported websites](#downloading-video-from-unsupported-websites)
 - [License / Legal issues](#license--legal-issues)
 
@@ -74,4 +74,5 @@
 - I am not responsible for any legal issues caused by copyright violations.
   - For example...
     - Sharing the videos without original author's contents
+    - Profitting from the videos you downloaded
     - Downloading the videos from the websites where it's not allowed.
