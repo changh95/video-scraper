@@ -1,5 +1,15 @@
 # video-scraper
 
+## Table of contents
+
+- [Features](#features)
+- [Example uses](#example-uses)
+- [How to use](#how-to-use)
+  - [Linux](#linux)
+  - [Windows](#windows)
+- [Downloading video from unsupported websites](#downloading-video-from-unsupported-websites)
+- [License / Legal issues](#license--legal-issues)
+
 ## Features
 
 - **Video downloader with just a single command**.
@@ -11,14 +21,6 @@
 - Downloading lecture videos from Youtube
 - Downloading music videos from Youtube
 - Downloading presentation videos from online academic conferences
-
-## License / Legal issues
-
-- I strongly recommend using this software ONLY to download videos for PERSONAL USAGE.
-- I am not responsible for any legal issues caused by copyright violations.
-  - For example...
-    - Sharing the videos without original author's contents
-    - Downloading the videos from the websites where it's not allowed.
 
 ## How to use
 
@@ -58,10 +60,18 @@
   - Once you run the command above, you will see a file `ffmpeg-4.4-full_build`. Unzip this, and copy the 'ffmpeg-4.4-full_build/bin/ffmpeg.exe' to the main directory (right next to youtube-dl.exe).
 - For any uses after the first time, just use `python3 ./main.py`.
 
-## Tips
+## Downloading video from unsupported websites
 
 - If you are downloading a video from a website that is not officially supported by [youtube-dl](https://github.com/ytdl-org/youtube-dl)...
   - Get the streaming url by using [Video Downloadhelper](https://chrome.google.com/webstore/detail/video-downloadhelper/lmjnegcaeklhafolokijcfjliaokphfk?hl=ko).
   - Paste the streaming url onto the `video_list.csv`
 
 ![](./image.png)
+
+## License / Legal issues
+
+- I strongly recommend using this software ONLY to download videos for PERSONAL USAGE.
+- I am not responsible for any legal issues caused by copyright violations.
+  - For example...
+    - Sharing the videos without original author's contents
+    - Downloading the videos from the websites where it's not allowed.
