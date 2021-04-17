@@ -14,7 +14,7 @@
   - [youtube-dl](https://github.com/ytdl-org/youtube-dl) is used to download videos
   - A .csv file is used to manage what videos to download.
 
-![](./demo.gif)
+![](./images/demo.gif)
 
 ## Example uses
 
@@ -47,7 +47,7 @@
   - Get the streaming url by using [Video Downloadhelper](https://chrome.google.com/webstore/detail/video-downloadhelper/lmjnegcaeklhafolokijcfjliaokphfk?hl=ko).
   - Paste the streaming url onto the `video_list.csv`
 
-![](./img.gif)
+![](./images/video_download_helper.gif)
 
 ## License / Legal issues
 
