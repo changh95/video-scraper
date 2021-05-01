@@ -8,7 +8,8 @@ import os
 
 
 def read_csv(lst):
-    f = open('./video_list.csv', 'r', encoding='utf-8')
+    path = os.path.join(".", "video_list.csv")
+    f = open(path, 'r', encoding='utf-8')
     rdr = csv.reader(f)
     for line in rdr:
         lst.append((line[0], line[1]))
@@ -23,14 +24,26 @@ def main():
         print("List is empty. Terminating program")
 
     extensions = [".mp4", ".mkv"]
+    path_binary = os.path.join(".", "python_venv", "Scripts")
+    if os.name == 'posix':
+        path_binary = os.path.join(path_binary, "youtube-dl")
+
+    if os.name == 'nt':
+        path_binary = os.path.join(path_binary, "youtube-dl.exe")
+
+    path_file = os.path.join(".", "index-index")
 
     for elem in lst:
-        os.system("./python_venv/bin/youtube-dl " + elem[1])
+        if os.name == 'posix':
+            os.system(path_binary + " " + elem[1])
+        
+        if os.name == 'nt':
+            os.system(path_binary + " " + elem[1])
 
         for ext in extensions:
-            filename = "../index-index" + ext
-            if os.path.isfile(filename):
-                os.rename(filename, elem[0] + ext)
+            path_file += ext
+            if os.path.isfile(path_file):
+                os.rename(path_file, elem[0] + ext)
 
 
 if __name__ == "__main__":

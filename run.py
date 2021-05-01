@@ -12,12 +12,15 @@ parser.add_argument('--setup', action='store_true',
                     help='Set this flag if running for the first time')
 args = parser.parse_args()
 
-if args.setup:
-    if os.name == 'posix':
+if os.name == 'posix':
+    if args.setup:
         os.system("chmod u+x ./scripts/setup.sh")
         os.system("./scripts/setup.sh")
 
-    if os.name == 'nt':
-        print("I need to implement this")  # TODO
+    os.system("python3 ./scripts/main.py")
 
-os.system("python3 ./scripts/main.py")
+if os.name == 'nt':
+    if args.setup:
+        print("Need to develop code for this part") #TODO
+
+    os.system("python ./scripts/main.py")
