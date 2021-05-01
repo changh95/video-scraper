@@ -26,7 +26,7 @@
 
 > Works for Windows / MacOS / Linux! :smile_cat:
 > 
-> If you are using Windows (or using `python` alias instead of `python3`), use `python` command instead of `python3`
+> If you are using Windows (or using `python` alias instead of `python3`), use `python` command instead of `python3`. Also, use **WSL**.
 
 - You need [Python3](https://www.python.org/downloads/) to run this script.
 - Use `git clone https://github.com/changh95/video-scraper.git` command in your terminal to clone the code.
