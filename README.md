@@ -37,7 +37,7 @@
   - The second column is the **streaming url**.
     - If you are downloading videos from the officially supported websites by [youtube-dl](https://github.com/ytdl-org/youtube-dl), just copy and paste the url from the browser.
     - If you are downloading videos from any other websites, you'll need to type in the streaming url. If you are not sure how to get this, refer to the 'Tips' section below.
-- Run `python3 ./main.py --setup` if you are running the script for the first time.
+- Run `python3 ./run.py --setup` if you are running the script for the first time.
   - This downloads the necessary softwares.
 - For any uses after that, just simply use `python3 ./main.py`.
 
