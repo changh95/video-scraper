@@ -24,12 +24,11 @@ def main():
         print("List is empty. Terminating program")
 
     extensions = [".mp4", ".mkv"]
-    path_binary = os.path.join(".", "python_venv", "Scripts")
     if os.name == 'posix':
-        path_binary = os.path.join(path_binary, "youtube-dl")
+        path_binary = os.path.join(".", "python_venv", "bin", "youtube-dl")
 
     if os.name == 'nt':
-        path_binary = os.path.join(path_binary, "youtube-dl.exe")
+        path_binary = os.path.join(".", "python_venv", "Scripts", "youtube-dl.exe")
 
     path_file = os.path.join(".", "index-index")
 
