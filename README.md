@@ -3,7 +3,7 @@
 ## Features
 
 - **Video downloader with just a single command**.
-  - [youtube-dl](https://github.com/ytdl-org/youtube-dl) is used to download videos
+  - [yt-dlp](https://github.com/yt-dlp/yt-dlp) is used to download videos
   - A .csv file is used to manage what videos to download.
 
 ![](./images/demo.gif)
@@ -30,7 +30,7 @@ python3 ./run.py --setup
 
 ## Downloading video from other websites
 
-- If you are downloading a video from a website that is not officially supported by [youtube-dl](https://github.com/ytdl-org/youtube-dl)...
+- If you are downloading a video from a website that is not officially supported by [yt-dlp](https://github.com/yt-dlp/yt-dlp)...
   - Get the streaming url by using [Video Downloadhelper](https://chrome.google.com/webstore/detail/video-downloadhelper/lmjnegcaeklhafolokijcfjliaokphfk?hl=ko).
   - Paste the streaming url onto the `video_list.csv`
 
