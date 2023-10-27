@@ -25,10 +25,10 @@ def main():
 
     extensions = [".mp4", ".mkv"]
     if os.name == 'posix':
-        path_binary = os.path.join(".", "python_venv", "bin", "youtube-dl")
+        path_binary = os.path.join(".", "python_venv", "bin", "yt-dlp")
 
     if os.name == 'nt':
-        path_binary = os.path.join(".", "python_venv", "Scripts", "youtube-dl.exe")
+        path_binary = os.path.join(".", "python_venv", "Scripts", "yt-dlp.exe")
 
     path_file = os.path.join(".", "index-index")
 
