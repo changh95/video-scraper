@@ -6,21 +6,23 @@
 import os
 import argparse
 
-parser = argparse.ArgumentParser(
-    description='Setup')
-parser.add_argument('--setup', action='store_true',
-                    help='Set this flag if running for the first time')
+parser = argparse.ArgumentParser(description='Setup')
+parser.add_argument('--setup', action='store_true', help='Set this flag if running for the first time')
 args = parser.parse_args()
+
+setup_script_path = os.path.join('.', 'scripts', 'setup.sh')
+main_script_path = os.path.join('.', 'scripts', 'main.py')
 
 if os.name == 'posix' or os.name == 'darwin':
     if args.setup:
-        os.system("chmod u+x ./scripts/setup.sh")
-        os.system("./scripts/setup.sh")
+        os.system(f'chmod u+x {setup_script_path}')
+        os.system(f'{setup_script_path}')
+    os.system(f'python3 {main_script_path}')
 
-    os.system("python3 ./scripts/main.py")
-
-if os.name == 'nt':
+elif os.name == 'nt':
     if args.setup:
-        print("Need to develop code for this part") #TODO
+        raise NotImplementedError('TODO')
+    os.system(f'python {main_script_path}')
 
-    os.system("python ./scripts/main.py")
+else:
+    raise NotImplementedError
