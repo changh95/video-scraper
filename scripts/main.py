@@ -33,11 +33,12 @@ def main():
         raise NotImplementedError
 
     for elem in lst:
-        output_name, media_url = elem
+        video_stem, media_url = elem
+        video_name = video_stem + ".%(ext)s"
         if os.name == 'posix':
-            os.system(f'{path_binary} "{media_url}" -o "{output_name}"')
+            os.system(f'{path_binary} "{media_url}" -o "{video_name}"')
         elif os.name == 'nt':
-            os.system(f'{path_binary} {media_url} -o {output_name}')
+            os.system(f'{path_binary} {media_url} -o {video_name}')
         else:
             raise NotImplementedError
 
