@@ -22,27 +22,25 @@ def main():
 
     if not lst:
         print("List is empty. Terminating program")
+        return
 
-    extensions = [".mp4", ".mkv"]
+    path_binary = None
     if os.name == 'posix':
         path_binary = os.path.join(".", "python_venv", "bin", "yt-dlp")
-
-    if os.name == 'nt':
+    elif os.name == 'nt':
         path_binary = os.path.join(".", "python_venv", "Scripts", "yt-dlp.exe")
-
-    path_file = os.path.join(".", "index-index")
+    else:
+        raise NotImplementedError
 
     for elem in lst:
+        video_stem, media_url = elem
+        video_name = video_stem + ".%(ext)s"
         if os.name == 'posix':
-            os.system(path_binary + " " + elem[1])
-        
-        if os.name == 'nt':
-            os.system(path_binary + " " + elem[1])
-
-        for ext in extensions:
-            path_file += ext
-            if os.path.isfile(path_file):
-                os.rename(path_file, elem[0] + ext)
+            os.system(f'{path_binary} "{media_url}" -o "{video_name}"')
+        elif os.name == 'nt':
+            os.system(f'{path_binary} {media_url} -o {video_name}')
+        else:
+            raise NotImplementedError
 
 
 if __name__ == "__main__":
